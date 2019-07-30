@@ -1,0 +1,349 @@
+/*-----------------------------------------------------------------------*/
+
+/*------------------------------Basic Setup------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+    color: #555;
+    font-family: 'lato', 'arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*-------------------------Reusable Components---------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+section{
+    padding: 80px 0px;
+}
+
+.mid {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------Heading--------------------------------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/*--------------------------------Icons----------------------------------*/
+
+
+.icon-big{
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------------Buttons--------------------------------*/
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    transition: background-color .2s, border .2s, color .2s;
+    color: #fff;
+}
+
+.btn-dark:link,
+.btn-dark:visited {
+    background: #76a3d0;
+    margin-right: 15px;
+    border: 1px solid #76a3d0;
+}
+
+.btn-light:link,
+.btn-light:visited {
+    border: 1px solid #76a3d0;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #5d92c7;
+}
+
+.btn-dark::hover,
+.btn-dark:active {
+    border: #5d92c7;
+}
+
+.btn-light:hover,
+.btn-light:active {
+    border: #5d92c7;
+    color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*--------------------------------Header---------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+.mid div h1 {
+    float: left;
+    margin-top: 35px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: -80px;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid transpaent;
+    transition: font-size 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    font-size: 150%;
+    color: #76a3d0;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pexels-photo-459653.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.text-back {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hed:hover,
+.hed:active{
+    font-size: 100%;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*--------------------------------Features-------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+.features{
+    padding: 20px 0px 80px 0px;
+    margin-bottom: 440px;
+}
+
+.long {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box {
+    margin-top: 40px;
+    text-align: center;
+    padding: 1%;
+}
+
+.box p{
+    line-height: 130%;
+    font-size: 90%;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*-------------------------------our-team--------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+.our-team h2{
+    margin-top: -80px;
+}
+
+.our-team{
+    margin-bottom: 520px;
+}
+
+.team-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.team-showcase li{
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.team-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.team-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    position: relative;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.hid h3{
+    position: absolute;
+    font-size: 40px;
+    margin-top: -300px;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.team-photo img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*--------------------------------About----------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+.about img{
+    width: 500px;
+    height: auto;
+    transition: width 0.3s, height 0.3s, margin-left 0.3s, margin-top 0.3s ;
+}
+
+.about img:hover{
+    width: 560px;
+    height: auto;
+    margin-left: -30px;
+    margin-top: -20px;
+}
+
+.about{
+    background-color: #f4f4f4;
+    padding-bottom: 440px;
+}
+
+.about a{
+    text-decoration: none;
+    font-weight: 400;
+    transition: border-bottom 0.2s;
+}
+
+.about a:hover{
+    border-bottom: 1px solid #5d92c7;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+/*-------------------------------Testimonial-----------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+.testimonial{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/testimonial.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    color: #fff;
+}
+
+cite{
+    font-size: 90%;
+    display: block;
+}
+
+cite img{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
